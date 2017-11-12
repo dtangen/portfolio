@@ -1,0 +1,75 @@
+.header {
+	border-bottom: 0px;
+	border-style: solid;
+	border-color: white;
+	background-color: white;
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+.dantangen {
+	background-color: #4aaaa5;
+	color: white;
+	border: 0px;
+	padding: 20px;
+	text-align: center;
+	vertical-align: center;
+	margin-left: 150px;
+	display: inline;
+	position: relative;
+	top: 3px;
+}
+
+h3 {
+	float: right;
+	display: inline;
+	padding-right: 25px;
+	vertical-align: center;
+	font-family: Georgia;
+}
+
+.portfolioimage {
+	width: 200px;
+	height: 200px;
+	border: 0;
+}
+
+.image {
+	position: relative;
+	width: 200px;
+	float: left;
+	padding: 5px;
+}
+
+#imagetext {
+	position: absolute;
+	bottom: 5px;
+	text-align: center;
+	background-color: #4aaaa5;
+	color: white;
+	border: solid;
+	border: 0px;
+	width: 200px;
+	border-color: #4aaaa5;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.footer {
+	text-align: center;
+	vertical-align: center;
+	border-top: solid;
+	border-width: 10px;
+	border-color: #4aaaa5;
+	background-color: #666666;
+	padding: 25px;
+	position: fixed;
+	width: 100%;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	color: white;
+}
