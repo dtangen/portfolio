@@ -7,12 +7,9 @@
 	height: 60px;
 	position: fixed;
 	top: 0px;
-	left: 0px;
+    left: 0px;
 }
 
-.row {
-    height: 500px;
-}
 .dantangen {
 	background-color: #4aaaa5;
 	color: white;
@@ -72,7 +69,6 @@
 	border-color: #4aaaa5;
 	background-color: #666666;
 	padding: 25px;
-	position: fixed;
 	width: 100%;
 	right: 0px;
 	bottom: 0px;
