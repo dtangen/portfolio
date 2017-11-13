@@ -10,6 +10,9 @@
 	left: 0px;
 }
 
+.row {
+    height: 500px;
+}
 .dantangen {
 	background-color: #4aaaa5;
 	color: white;
@@ -23,13 +26,15 @@
 	top: 3px;
 }
 
-h3 {
+.link {
 	float: right;
 	display: inline;
 	padding-right: 25px;
 	vertical-align: center;
 	font-family: Georgia;
 }
+
+
 
 .portfolioimage {
 	width: 200px;
@@ -41,7 +46,8 @@ h3 {
 	position: relative;
 	width: 200px;
 	float: left;
-	padding: 5px;
+    padding: 5px;
+    margin: 5px;
 }
 
 #imagetext {

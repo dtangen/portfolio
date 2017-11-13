@@ -7,28 +7,84 @@
     <link rel="stylesheet" type="text/css" href=".assets\css\reset.css">
     <link rel="stylesheet" type="text/css" href=".\assets\css\style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+    <script>
+        $('.smooth').on('click', function () {
+            $.smoothScroll({
+                scrollElement: $('body'),
+                scrollTarget: '#' + this.id
+            });
+
+            return false;
+        });
+    </script>
+
+    <div id="navbar" class="header">
+        <a href="#contact" class="link">Contact</a>
+        <a href="#portfolio" class="link">Portfolio</a>
+        <a href="#skills" class="link">Skills</a>
+        <a href="#about" class="link">About</a>
+    </div>
 </head>
 
 <body>
     <div class="container">
-        <div class="name">
-            <h1>Dan Tangen</h1>
-            <h4>Web Developer/Designer</h4>
+        <div class="jumbotron">
+            <div class="name">
+                <h1>Dan Tangen</h1>
+                <h4>Web Developer/Designer</h4>
+            </div>
         </div>
 
-        <div class="intro">
-            <h2>Intro</h2>
-            <p>I am Dan Tangen, a Full Stack Developer from Overland Park, Kansas. I have a degree in Economics from Pittsburg
-                State University and attended a Full Stack Development Boot Camp with Trilogy Education at Kansas University.
-                I like making creative and innovative applications and websites. I work with HTML, CSS, Bootstrap, Javascript,
-                jQuery, React.js, Node.js, MongoDB, and MySQL.</p>
-        </div>
-
-        <div class="skills">
-            <h2>Skills</h2>
-        </div>
         <div class="row">
-            <div class="portfolio">
+            <div class="intro" id="intro">
+                <a id="about" class="smooth"></a>
+                <h2>Intro</h2>
+                <p>I am Dan Tangen, a Full Stack Developer from Overland Park, Kansas. I have a degree in Economics from Pittsburg
+                    State University and attended a Full Stack Development Boot Camp with Trilogy Education at Kansas University.
+                    I have a passion for web development and creating useful applications and websites.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="skills" id="skills">
+                <a id="skills" class="smooth"></a>
+                <h2>Skills</h2>
+                <div class="image">
+                    <img src=".\assets\images\HTML5.png" alt="HTML5" class="portfolioimage">
+                    <p id="imagetext">HTML5</p>
+                </div>
+                <div class="image">
+                    <img src=".\assets\images\CSS3.png" alt="CSS3" class="image">
+                    <p id="imagetext">CSS3</p>
+                </div>
+                <div class="image">
+                    <img src=".\assets\images\javascript.png" alt="Javascript" class="image">
+                    <p id="imagetext">Javascript</p>
+                </div>
+                <div class="image">
+                    <img src=".\assets\images\jquery.png" alt="jQuery" class="image">
+                    <p id="imagetext">jQuery</p>
+                </div>
+                <div class="image">
+                    <img src=".\assets\images\react.png" alt="React.js" class="image">
+                    <p id="imagetext">React.js</p>
+                </div>
+                <div class="image">
+                    <img src=".\assets\images\mysql.png" alt="MySQL" class="image">
+                    <p id="imagetext">MySQL</p>
+                </div>
+                <div class="image">
+                    <img src=".\assets\images\mongodb.png" alt="MongoDB" class="image">
+                    <p id="imagetext">MongoDB</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="portfolio" id="portfolio">
+                <a id="portfolio" class="smooth"></a>
                 <h2>Portfolio</h2>
                 <div class="image">
                     <a href="https://rockchalkbogota.github.io/maintain-app/">
@@ -51,7 +107,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="contact">
+            <div class="contact" id="contact">
+                <a id="contact" class="smooth"></a>
                 <h2>Contact</h2>
             </div>
         </div>
