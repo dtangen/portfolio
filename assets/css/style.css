@@ -31,17 +31,24 @@
 	font-family: Georgia;
 }
 
-
-
 .portfolioimage {
-	width: 200px;
-	height: 200px;
+	width: 100%;
+	height: 100%;
 	border: 0;
 }
 
 .image {
 	position: relative;
+	width: 100%;
+	float: left;
+    padding: 5px;
+    margin: 5px;
+}
+
+.skillsimage {
+	position: relative;
 	width: 200px;
+	height: 200px;
 	float: left;
     padding: 5px;
     margin: 5px;
