@@ -49,6 +49,43 @@ button:hover {
 	border: 0;
 }
 
+.info {
+    position: relative;
+    display: inline-block;
+}
+
+.info .projectInfo {
+    visibility: hidden;
+    width: 300px;
+    background-color: #4aaaa5;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+	z-index: 1;
+	
+	top: 100px;
+	left: 105%;
+}
+
+.info:hover .projectInfo {
+    visibility: visible;
+}
+
+.info .projectInfo::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -25px;
+    border-width: 25px;
+    border-style: solid;
+    border-color: transparent #4aaaa5 transparent transparent;
+}
+
 .image {
 	position: relative;
 	width: 100%;
