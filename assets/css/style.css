@@ -176,3 +176,18 @@ button:hover {
     #intro { width:100%; }
     #secondary { width:100%; margin:0; border:none; }
 }
+
+@media screen and (max-width: 480px) {
+    #intro { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+@media screen and (max-width: 320px) {
+    #intro { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+@media screen and (max-width: 240px) {
+    #intro { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
