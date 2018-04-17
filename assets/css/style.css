@@ -145,7 +145,7 @@ button:hover {
 	/* #secondary { width:30%; margin-left:3%;} */
 	.info {
 		position: relative;
-		display: inline-block;
+		/* display: inline-block; */
 	}
 	
 	.info .projectInfo {
