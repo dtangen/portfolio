@@ -179,7 +179,11 @@ button:hover {
 
 @media screen and (max-width: 480px) {
     #intro { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
+    .header a:not(:first-child) {display: none;}
+  	.header a.icon {
+    	float: right;
+    	display: block;
+  }
 }
 
 @media screen and (max-width: 320px) {
