@@ -140,7 +140,7 @@ button:hover {
 
 /*Responsiveness */
 /* Tablet Landscape */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
     #intro { width:67%; }
 	/* #secondary { width:30%; margin-left:3%;} */
 	.info {
