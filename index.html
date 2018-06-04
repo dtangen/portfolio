@@ -1,188 +1,147 @@
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 <html>
 
 <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dan Tangen</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
-    <link rel="stylesheet" type="text/css" href=".\assets\css\reset.css">
-    <link rel="stylesheet" type="text/css" href=".\assets\css\style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-    <script>
-        $('.smooth').on('click', function () {
-            $.smoothScroll({
-                scrollElement: $('body'),
-                scrollTarget: '#' + this.id
-            });
-
-            return false;
-        });
-    </script>
-
-    <div id="navbar" class="header">
-        <a href="#contact" class="link">Contact</a>
-        <a href="#skills" class="link">Skills</a>
-        <a href="#portfolio" class="link">Portfolio</a>
-        <a href="#about" class="link">About</a>
-    </div>
-    <!-- /navbar /header -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap v4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
 </head>
 
 <body>
-    <div class="container">
-        <div class="jumbotron">
-            <div class="name">
-                <h1>Dan Tangen</h1>
-                <h4>Web Developer/Designer</h4>
-                <div class="col-sm-8 col-sm-offset-1 buttondiv">
-                    <button class="resumebutton" href="#" onclick="window.open('./assets/images/DanTangenResume.pdf', '_blank', 'fullscreen=yes'); return false;"
-                        style="visibility: visible; animation-name: fadeInDown; background-color:#fff; color:#515769; font-size:37px; font-weight:700;">View Resume</button>
-                </div>
-                <!--- /buttondiv -->
-            </div>
-            <!-- /name -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#" onclick="window.open('./assets/images/DanTangenResume.pdf', '_blank', 'fullscreen=yes'); return false;">Dan Tangen - Web Developer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="window.open('./assets/images/DanTangenResume.pdf', '_blank', 'fullscreen=yes'); return false;">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        View Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="http://dcsb6.org/" target="__blank">Douglas County Success By 6</a>
+                        <a class="dropdown-item" href="https://dtangen.github.io/kcmicrogreens/" target="__blank">KC Microgreens</a>
+                        <a class="dropdown-item" href="http://peaceful-sierra-12498.herokuapp.com/" target="__blank">Affect</a>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <!-- /jumbotron -->
+    </nav>
 
-        <div class="row">
-            <div class="intro" id="intro">
-                <a id="about" class="smooth"></a>
-                <h2>About</h2>
-                <p>Creative Coder with a love of all things technical. I love collaborating and building with other passionate
-                    developers dedicated to making unique, creative, and useful applications while making sure we have fun
-                    along the way. I'm fascinated with the ever-changing world of programming, and believe that there is
-                    always something more to learn and create.
-                </p>
+    <div class="container-fluid text-center">
+        <div class="row d-inline-block" id="aboutMe">
+            <h1 class="col-lg-12 text-center">About Me</h1>
+            <div class="profile">
+                <img src="./assets/images/profile.png" class="profileImage">
             </div>
-            <!-- /intro -->
+            <p class="aboutMe">Creative Coder with a love of all things technical. I love collaborating and building with other passionate developers
+                dedicated to making unique, creative, and useful applications while making sure we have fun along the way.
+                I'm fascinated with the ever-changing world of programming, and believe that there is always something more
+                to learn and create.</p>
         </div>
-        <!-- /row -->
-
-        <div class="row">
-            <div class="portfolio" id="portfolio">
-                <a id="portfolio" class="smooth"></a>
-                <h2>Portfolio</h2>
-                <div class="image info">
-                    <span class="projectInfo">A website for Douglas County Success By 6, a non-profit affiliate of the United Way.
-                        <h5>Built Using:</h5>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                        </ul>
-                    </span>
-                    <a href="http://dcsb6.org/" target="__blank">
-                        <img src=".\assets\images\DCSB6.png" alt="DCSB6" class="portfolioimage">
-                    </a>
-                    <p id="imagetext">DCSB6</p>
-                </div>
-                <div class="image info">
-                    <span class="projectInfo">A website for KC Microgreens.
-                        <h5>Built Using:</h5>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>jQuery</li>
-                            <li>Bootstrap</li>
-                        </ul>
-                    </span>
-                    <a href="https://rockchalkbogota.github.io/maintain-app/" target="__blank">
-                        <img src=".\assets\images\kcmicrogreens.png" alt="KC Microgreens" class="portfolioimage">
-                    </a>
-                    <p id="imagetext">KC Microgreens</p>
-                </div>
-                <div class="image info">
-                    <span class="projectInfo">A website designed to help users find charities to donate to that align with their own interests.
-                        <h5>Built Using:</h5>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>jQuery</li>
-                            <li>MySQL</li>
-                            <li>APIs</li>
-                        </ul>
-                    </span>
-                    <a href="http://peaceful-sierra-12498.herokuapp.com/" target="__blank">
-                        <img src=".\assets\images\affect-website.png" alt="Affect" class="portfolioimage">
-                    </a>
-                    <p id="imagetext">Affect</p>
-                </div>
-                <div class="image info">
-                    <span class="projectInfo">An application that makes users take a survey, then matches them with others with similiar scores.
-                        <h5>Built Using:</h5>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Node.js</li>
-                        </ul>
-                    </span>
-                    <a href="https://friendfinderdtangen.herokuapp.com/" target="__blank">
-                        <img src=".\assets\images\friendfinder-website.png" alt="FriendFinder" class="portfolioimage">
-                    </a>
-                    <p id="imagetext">Friend Finder</p>
-                </div>
+        <div class="row" id="projects">
+            <h1 class="col-lg-12 text-center">Projects</h1>
+            <div class="image info text-center">
+                <a href="http://dcsb6.org/" target="__blank">
+                    <p class="imageText mx-auto">DCSB6</p>
+                </a>
+                <span class="projectInfo">A website for Douglas County Success By 6, a non-profit affiliate of the United Way.
+                    <h5>Built Using:</h5>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                    </ul>
+                    <!-- <p class="imageText mx-auto">DCSB6</p> -->
+                </span>
+                <a href="http://dcsb6.org/" target="__blank">
+                    <img src=".\assets\images\successbysix.png" alt="DCSB6" class="projectImage img-fluid">
+                </a>
             </div>
         </div>
-
-        <div class="row">
-            <div class="skills" id="skills">
-                <a id="skills" class="smooth"></a>
-                <h2>Skills</h2>
-                <div class="skillsimage">
-                    <img src=".\assets\images\HTML5.png" alt="HTML5" class="portfolioimage">
-                    <p id="imagetext">HTML5</p>
-                </div>
-                <div class="skillsimage">
-                    <img src=".\assets\images\CSS3.png" alt="CSS3" class="image">
-                    <p id="imagetext">CSS3</p>
-                </div>
-                <div class="skillsimage">
-                    <img src=".\assets\images\javascript.png" alt="Javascript" class="image">
-                    <p id="imagetext">Javascript</p>
-                </div>
-                <div class="skillsimage">
-                    <img src=".\assets\images\jquery.png" alt="jQuery" class="image">
-                    <p id="imagetext">jQuery</p>
-                </div>
-                <div class="skillsimage">
-                    <img src=".\assets\images\react.png" alt="React.js" class="image">
-                    <p id="imagetext">React.js</p>
-                </div>
-                <div class="skillsimage">
-                    <img src=".\assets\images\mysql.png" alt="MySQL" class="image">
-                    <p id="imagetext">MySQL</p>
-                </div>
-                <div class="skillsimage">
-                    <img src=".\assets\images\mongodb.png" alt="MongoDB" class="image">
-                    <p id="imagetext">MongoDB</p>
-                </div>
-            </div>
+        <div class="image info text-center">
+            <a href="https://dtangen.github.io/kcmicrogreens/" target="__blank">
+                <p class="imageText mx-auto">KC Microgreens</p>
+            </a>
+            <span class="projectInfo">A website for KC Microgreens to connect with customers and showcase products
+                <h5>Built Using:</h5>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </span>
+            <a href="https://dtangen.github.io/kcmicrogreens/" target="__blank">
+                <img src=".\assets\images\kcmicrogreens.png" alt="KC Microgreens" class="projectImage img-fluid">
+            </a>
         </div>
-
-        <div class="row">
-            <div class="contact" id="contact">
-                <a id="contact" class="smooth"></a>
-                <h2>Contact</h2>
-                <p>913-449-8230</p>
-                <p>dtangen1(at)gmail.com</p>
-                <p>
-                    <a href="https://github.com/dtangen" target="__blank">Github</a>
-                </p>
-                <p>
-                    <a href="https://www.linkedin.com/in/dan-tangen/" target="__blank">LinkedIn</a>
-                </p>
-            </div>
+        <div class="image info text-center">
+            <a href="http://peaceful-sierra-12498.herokuapp.com/" target="__blank">
+                <p class="imageText mx-auto">Affect</p>
+            </a>
+            <span class="projectInfo">A website designed to help users find charities to donate to that align with their own interests.
+                <h5>Built Using:</h5>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>MySQL</li>
+                    <li>APIs</li>
+                </ul>
+            </span>
+            <a href="http://peaceful-sierra-12498.herokuapp.com/" target="__blank">
+                <img src=".\assets\images\affect-website.png" alt="Affect" class="projectImage img-fluid">
+            </a>
         </div>
     </div>
+    <div class="container-fluid">
+        <h1 class="col-lg-12 text-center">Contact</h1>
+        <ul class="text-center">
+            <li>dtangen(at)gmail.com</li>
+            <li>(913)449-8230</li>
+            <li>
+                <a href="https://www.linkedin.com/in/dan-tangen/">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://github.com/dtangen">Github</a>
+            </li>
+        </ul>
+    </div>
+    <nav class="navbar sticky-bottom navbar-dark bg-dark">
+        <a class="navbar-brand mx-auto" href="http://dantangen.com/" target="__blank">&#169; Dan Tangen 2018</a>
+    </nav>
+
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
-<footer class="footer">@Copyright 2017 Dan Tangen</footer>
 
 </html>

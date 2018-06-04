@@ -29,7 +29,6 @@
 }
 
 .link {
-	float: right;
 	display: inline;
 	padding-right: 25px;
 	vertical-align: center;
@@ -62,7 +61,7 @@ button:hover {
 .info .projectInfo {
     visibility: hidden;
     width: 300px;
-    background-color: #4aaaa5;
+    background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
